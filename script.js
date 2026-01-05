@@ -1,4 +1,4 @@
-    // Set footer year
+// Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Project search filter
