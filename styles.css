@@ -1,0 +1,175 @@
+:root {
+  --bg: #0b0c10;
+  --card: #12141b;
+  --text: #e7eaf0;
+  --muted: #aab1c3;
+  --border: #232738;
+  --accent: #6ea8fe;
+  --shadow: 0 10px 30px rgba(0,0,0,0.35);
+  --radius: 16px;
+  --max: 980px;
+  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: var(--max); margin: 0 auto; padding: 22px; }
+
+.header {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 28px;
+}
+
+.brand h1 { margin: 0; font-size: 28px; letter-spacing: 0.2px; }
+.subtitle { margin: 8px 0 0; color: var(--muted); }
+
+.nav {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.nav a {
+  color: var(--text);
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.nav a:hover {
+  border-color: var(--border);
+  background: rgba(255,255,255,0.03);
+  text-decoration: none;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-top: 18px;
+  box-shadow: var(--shadow);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+}
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; }
+}
+
+.hero h2 { margin-top: 0; }
+.hero-side .badge {
+  display: inline-block;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(110,168,254,0.10);
+  margin-bottom: 10px;
+}
+.quick { margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
+.quick li { margin: 8px 0; }
+
+.cta { display: flex; gap: 10px; flex-wrap: wrap; margin: 14px 0; }
+.links { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 10px; color: var(--muted); }
+.links a { color: var(--muted); }
+.links a:hover { color: var(--text); text-decoration: none; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn:hover { background: rgba(255,255,255,0.06); text-decoration: none; }
+.btn.primary { background: rgba(110,168,254,0.20); border-color: rgba(110,168,254,0.35); }
+.btn.small { padding: 8px 10px; border-radius: 10px; font-size: 14px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+@media (max-width: 860px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+.panel {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(255,255,255,0.02);
+}
+.panel h3 { margin: 0 0 10px; }
+.panel ul { margin: 0; padding-left: 18px; color: var(--muted); }
+.panel li { margin: 7px 0; }
+
+.timeline .item { margin-top: 14px; }
+.timeline .top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.timeline h3 { margin: 0; }
+.meta { color: var(--muted); font-size: 14px; }
+.timeline ul { margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
+.timeline li { margin: 8px 0; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.search input {
+  width: min(420px, 92vw);
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.25);
+  color: var(--text);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+@media (max-width: 860px) {
+  .projects { grid-template-columns: 1fr; }
+}
+
+.project {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(255,255,255,0.02);
+}
+.project h3 { margin: 0 0 6px; }
+.tags { margin: 0 0 10px; color: var(--muted); font-size: 14px; }
+.project p { color: var(--muted); line-height: 1.5; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+
+.note { color: var(--muted); }
+code { color: #cfe3ff; }
+
+.footer { text-align: center; color: var(--muted); padding: 18px 0 30px; }
