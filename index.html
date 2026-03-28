@@ -5,10 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Prem Kiran Polepalli | Full Stack .NET Developer</title>
   <meta name="description" content="Portfolio of Prem Kiran Polepalli — Full Stack Developer focused on .NET/C#, APIs, CI/CD, and modern web development." />
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <div class="bg">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="gridlines"></span>
+  </div>
   <header class="container header">
     <div class="brand">
       <h1>Prem Kiran Polepalli</h1>
@@ -38,336 +50,326 @@
   </header>
 
   <main class="container">
-    <!-- ABOUT -->
-    <section class="card hero" id="about">
-      <div>
-        <h2>About</h2>
-        <p>
-          I’m a Full Stack Developer with professional experience building and supporting web applications across backend,
-          frontend, and deployment workflows. My core focus is delivering reliable application features using
-          <strong>.NET/C#</strong>, building <strong>REST APIs</strong>, and integrating user interfaces with backend services.
-        </p>
-        <p>
-          I’ve worked in enterprise teams and also contribute to open-source initiatives, where I’ve taken on responsibilities
-          spanning technical delivery, collaboration, and engineering practices (reviews, workflows, and sprint execution).
-          I’m currently pursuing an <strong>MS in Computer Science</strong> at Saint Louis University.
-        </p>
+    <div class="layout">
+      <div class="primary">
+        <section class="card hero" id="about">
+          <div>
+            <h2>About</h2>
+            <p>
+              I’m a Full Stack Developer with professional experience building and supporting web applications across backend,
+              frontend, and deployment workflows. My core focus is delivering reliable application features using
+              <strong>.NET/C#</strong>, building <strong>REST APIs</strong>, and integrating user interfaces with backend services.
+            </p>
+            <p>
+              I’ve worked in enterprise teams and also contribute to open-source initiatives, where I’ve taken on responsibilities
+              spanning technical delivery, collaboration, and engineering practices (reviews, workflows, and sprint execution).
+              I’m currently pursuing an <strong>MS in Computer Science</strong> at Saint Louis University.
+            </p>
 
-        <div class="cta">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="#resume">Download Resume</a>
-        </div>
+            <div class="cta">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn" href="#resume">Download Resume</a>
+            </div>
 
-        <div class="links">
-          <a href="https://www.linkedin.com/in/polepalli-prem-kiran" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://github.com/premkiran2" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="mailto:premkiranpittu@gmail.com">Email</a>
-        </div>
-      </div>
-
-      <div class="hero-side">
-        <div class="badge">Open to Full Stack .NET / C# roles</div>
-        <ul class="quick">
-          <li><strong>Backend:</strong> C#, ASP.NET, APIs, EF/LINQ concepts</li>
-          <li><strong>Frontend:</strong> Angular, JavaScript, HTML/CSS</li>
-          <li><strong>DevOps:</strong> Azure DevOps, CI/CD, Docker</li>
-          <li><strong>Data:</strong> PostgreSQL, MySQL, SQL</li>
-          <li><strong>Systems:</strong> Kafka, microservices exposure</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="card" id="skills">
-      <h2>Skills</h2>
-
-      <div class="grid">
-        <div class="panel">
-          <h3>Languages</h3>
-          <ul>
-            <li>C, C++, Java, C#</li>
-            <li>JavaScript, TypeScript</li>
-            <li>Python (NumPy, Pandas, Scikit-learn)</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-
-        <div class="panel">
-          <h3>Web & Frontend</h3>
-          <ul>
-            <li>React, Angular</li>
-            <li>Tailwind CSS, HTML, CSS</li>
-            <li>jQuery, AJAX</li>
-          </ul>
-        </div>
-
-        <div class="panel">
-          <h3>Backend & Architecture</h3>
-          <ul>
-            <li>Node.js, Express, Flask</li>
-            <li>ASP.NET, MVC, EF, LINQ</li>
-            <li>Microservices, CQRS, Kafka</li>
-            <li>RESTful APIs, Swagger</li>
-          </ul>
-        </div>
-
-        <div class="panel">
-          <h3>Cloud & DevOps</h3>
-          <ul>
-            <li>Azure DevOps, GitHub Actions (CI)</li>
-            <li>Docker, Azure CI/CD, AWS S3</li>
-            <li>Okta (Security), Postman</li>
-          </ul>
-        </div>
-
-        <div class="panel">
-          <h3>Databases & Tools</h3>
-          <ul>
-            <li>PostgreSQL, MySQL</li>
-            <li>Stored Procedures, PIVOT</li>
-            <li>MS Test, Git, Jira, Agile</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section class="card" id="experience">
-      <h2>Experience</h2>
-
-      <div class="timeline">
-        <div class="item">
-          <div class="top">
-            <h3>Clarivate — Full Stack Developer</h3>
-            <span class="meta">Aug 2021 – Jul 2024 • Bangalore, India</span>
+            <div class="links">
+              <a href="https://www.linkedin.com/in/polepalli-prem-kiran" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://github.com/premkiran2" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="mailto:premkiranpittu@gmail.com">Email</a>
+            </div>
           </div>
-          <p class="stack">
-            Enterprise web development across backend and UI layers, collaborating with cross-functional partners and supporting
-            build/release workflows.
-          </p>
-          <ul>
-            <li>Delivered application features using ASP.NET and modern web technologies, connected UI flows with backend services.</li>
-            <li>Contributed to API integration and relational database usage for product workflows.</li>
-            <li>Used Azure DevOps pipelines and supported code quality through debugging, testing, and review practices.</li>
-            <li>Provided mentorship and technical guidance to support onboarding and team productivity.</li>
-          </ul>
-        </div>
 
-        <div class="item">
-          <div class="top">
-            <h3>Open Source with SLU — Tech Lead (GradEval360)</h3>
-            <span class="meta">Jan 2026 – Present • St. Louis, MO</span>
+          <div class="hero-side">
+            <div class="badge">Open to Full Stack .NET / C# roles</div>
+            <ul class="quick">
+              <li><strong>Backend:</strong> C#, ASP.NET, APIs, EF/LINQ concepts</li>
+              <li><strong>Frontend:</strong> Angular, JavaScript, HTML/CSS</li>
+              <li><strong>DevOps:</strong> Azure DevOps, CI/CD, Docker</li>
+              <li><strong>Data:</strong> PostgreSQL, MySQL, SQL</li>
+              <li><strong>Systems:</strong> Kafka, microservices exposure</li>
+            </ul>
           </div>
-          <p class="stack">
-            <strong>Tech Stack:</strong> TypeScript, Node.js, React, Tailwind CSS, PostgreSQL, Okta, GitHub CI
-          </p>
-          <ul>
-            <li>Developed GradEval360 using a TypeScript and Node.js backend, implementing RESTful APIs to streamline student evaluation workflows while ensuring high code maintainability through strict type safety.</li>
-            <li>Designed a responsive frontend with React and Tailwind CSS, focusing on a seamless user experience for faculty and students while managing complex application states and data entry forms.</li>
-            <li>Engineered a secure authentication layer using Okta and managed relational data with PostgreSQL, ensuring the protection of sensitive academic records and robust user role management.</li>
-            <li>Established a modern DevOps workflow by implementing Continuous Integration (CI) in GitHub and utilizing Postman and Swagger for automated API testing and comprehensive documentation.</li>
-          </ul>
-        </div>
+        </section>
 
-        <div class="item">
-          <div class="top">
-            <h3>Open Source with SLU — Tech Lead (STL Data API)</h3>
-            <span class="meta">Aug 2025 – Dec 2025 • St. Louis, MO</span>
+        <section class="card" id="experience">
+          <h2>Experience</h2>
+
+          <div class="timeline">
+            <div class="item">
+              <div class="top">
+                <h3>Clarivate — Full Stack Developer</h3>
+                <span class="meta">Aug 2021 – Jul 2024 • Bangalore, India</span>
+              </div>
+              <p class="stack">
+                Enterprise web development across backend and UI layers, collaborating with cross-functional partners and supporting
+                build/release workflows.
+              </p>
+              <ul>
+                <li>Delivered application features using ASP.NET and modern web technologies, connected UI flows with backend services.</li>
+                <li>Contributed to API integration and relational database usage for product workflows.</li>
+                <li>Used Azure DevOps pipelines and supported code quality through debugging, testing, and review practices.</li>
+                <li>Provided mentorship and technical guidance to support onboarding and team productivity.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="top">
+                <h3>Open Source with SLU — Tech Lead (GradEval360)</h3>
+                <span class="meta">Jan 2026 – Present • St. Louis, MO</span>
+              </div>
+              <p class="stack">
+                <strong>Tech Stack:</strong> TypeScript, Node.js, React, Tailwind CSS, PostgreSQL, Okta, GitHub CI
+              </p>
+              <ul>
+                <li>Developed GradEval360 using a TypeScript and Node.js backend, implementing RESTful APIs to streamline student evaluation workflows while ensuring high code maintainability through strict type safety.</li>
+                <li>Designed a responsive frontend with React and Tailwind CSS, focusing on a seamless user experience for faculty and students while managing complex application states and data entry forms.</li>
+                <li>Engineered a secure authentication layer using Okta and managed relational data with PostgreSQL, ensuring the protection of sensitive academic records and robust user role management.</li>
+                <li>Established a modern DevOps workflow by implementing Continuous Integration (CI) in GitHub and utilizing Postman and Swagger for automated API testing and comprehensive documentation.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="top">
+                <h3>Open Source with SLU — Tech Lead (STL Data API)</h3>
+                <span class="meta">Aug 2025 – Dec 2025 • St. Louis, MO</span>
+              </div>
+              <p class="stack">
+                Open-source leadership on a public-data API platform, contributing to architecture, delivery workflow, and team execution.
+              </p>
+              <ul>
+                <li>Supported a centralized API approach for consolidating public datasets into a consistent access layer.</li>
+                <li>Contributed to service patterns (microservices), CQRS concepts, and messaging (Kafka) discussions.</li>
+                <li>Led day-to-day execution: code reviews, GitHub workflow hygiene, and sprint coordination.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="top">
+                <h3>Open Source with SLU — Full Stack Contributor (Mouser)</h3>
+                <span class="meta">May 2025 – Jun 2025 • St. Louis, MO</span>
+              </div>
+              <ul>
+                <li>Implemented a feature integration enabling storage of research annotations to support structured scientific documentation.</li>
+              </ul>
+            </div>
           </div>
-          <p class="stack">
-            Open-source leadership on a public-data API platform, contributing to architecture, delivery workflow, and team execution.
-          </p>
-          <ul>
-            <li>Supported a centralized API approach for consolidating public datasets into a consistent access layer.</li>
-            <li>Contributed to service patterns (microservices), CQRS concepts, and messaging (Kafka) discussions.</li>
-            <li>Led day-to-day execution: code reviews, GitHub workflow hygiene, and sprint coordination.</li>
-          </ul>
-        </div>
+        </section>
 
-        <div class="item">
-          <div class="top">
-            <h3>Open Source with SLU — Full Stack Contributor (Mouser)</h3>
-            <span class="meta">May 2025 – Jun 2025 • St. Louis, MO</span>
+        <section class="card" id="projects">
+          <div class="row">
+            <h2>Projects</h2>
+            <div class="search">
+              <input id="search" type="search" placeholder="Search projects (e.g., .NET, Angular, Docker, Python, Data)..." />
+            </div>
           </div>
-          <ul>
-            <li>Implemented a feature integration enabling storage of research annotations to support structured scientific documentation.</li>
-          </ul>
-        </div>
+
+          <div class="projects" id="projectList">
+            <article class="project" data-tags=".net angular full stack web api">
+              <h3>Chat Board Application</h3>
+              <p class="tags">Full Stack • Collaboration</p>
+              <p>
+                A Q&A-style application built around community workflows (posting, voting, collaborative editing),
+                designed to highlight end-to-end feature delivery.
+              </p>
+            </article>
+
+            <article class="project" data-tags="angular .net ui">
+              <h3>MP3 Player UI</h3>
+              <p class="tags">Angular • .NET</p>
+              <p>
+                A focused UI project centered on clean list-based interaction patterns for browsing and managing song selections.
+              </p>
+            </article>
+
+            <article class="project" data-tags="azure docker blob storage cloud">
+              <h3>Cloud Storage Prototype</h3>
+              <p class="tags">Azure • Docker</p>
+              <p>
+                Containerized storage workflow prototype exploring deployment portability and practical cloud storage usage.
+              </p>
+            </article>
+
+            <article class="project" data-tags="pyspark databricks aws s3 analytics">
+              <h3>IPL Data Analysis</h3>
+              <p class="tags">PySpark • Databricks • AWS S3</p>
+              <p>
+                Data processing and analysis project focused on extracting patterns and producing outcome-oriented insights from match data.
+              </p>
+            </article>
+
+            <article class="project" data-tags="python scapy linux network security">
+              <h3>Network Traffic Analyzer</h3>
+              <p class="tags">Python • Scapy • Linux</p>
+              <p>
+                Network inspection tool exploring packet-level behavior and protocol analysis to surface suspicious patterns.
+              </p>
+            </article>
+
+            <article class="project" data-tags="java oop game">
+              <h3>Snake and Ladder Game</h3>
+              <p class="tags">Java • OOP</p>
+              <p>
+                A classic game implementation designed to demonstrate core OOP structure, state handling, and deterministic game rules.
+              </p>
+            </article>
+
+            <article class="project" data-tags="signal health detection">
+              <h3>Heart Sound Detection</h3>
+              <p class="tags">Health • Signal Features</p>
+              <p>
+                Applied project exploring how sound characteristics (tone/intensity) can be used as features for health-oriented detection.
+              </p>
+            </article>
+          </div>
+        </section>
       </div>
-    </section>
 
-    <!-- PROJECTS -->
-    <section class="card" id="projects">
-      <div class="row">
-        <h2>Projects</h2>
-        <div class="search">
-          <input id="search" type="search" placeholder="Search projects (e.g., .NET, Angular, Docker, Python, Data)..." />
-        </div>
-      </div>
+      <aside class="sidebar">
+        <section class="card" id="skills">
+          <h2>Skills</h2>
 
-      <div class="projects" id="projectList">
-        <article class="project" data-tags=".net angular full stack web api">
-          <h3>Chat Board Application</h3>
-          <p class="tags">Full Stack • Collaboration</p>
-          <p>
-            A Q&A-style application built around community workflows (posting, voting, collaborative editing),
-            designed to highlight end-to-end feature delivery.
+          <div class="grid">
+            <div class="panel">
+              <h3>Languages</h3>
+              <ul>
+                <li>C, C++, Java, C#</li>
+                <li>JavaScript, TypeScript</li>
+                <li>Python (NumPy, Pandas, Scikit-learn)</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Web & Frontend</h3>
+              <ul>
+                <li>React, Angular</li>
+                <li>Tailwind CSS, HTML, CSS</li>
+                <li>jQuery, AJAX</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Backend & Architecture</h3>
+              <ul>
+                <li>Node.js, Express, Flask</li>
+                <li>ASP.NET, MVC, EF, LINQ</li>
+                <li>Microservices, CQRS, Kafka</li>
+                <li>RESTful APIs, Swagger</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Cloud & DevOps</h3>
+              <ul>
+                <li>Azure DevOps, GitHub Actions (CI)</li>
+                <li>Docker, Azure CI/CD, AWS S3</li>
+                <li>Okta (Security), Postman</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Databases & Tools</h3>
+              <ul>
+                <li>PostgreSQL, MySQL</li>
+                <li>Stored Procedures, PIVOT</li>
+                <li>MS Test, Git, Jira, Agile</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="education">
+          <h2>Education</h2>
+          <div class="edu">
+            <div class="edu-item">
+              <h3>Saint Louis University</h3>
+              <p class="meta">MS, Computer Science • Aug 2024 – May 2026 • GPA: 3.84/4.0</p>
+            </div>
+            <div class="edu-item">
+              <h3>Manipal Institute of Technology</h3>
+              <p class="meta">B.Tech, Electronics & Communication Engineering • Jul 2017 – Jun 2021 • GPA: 8.44/10</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="internships">
+          <h2>Internships</h2>
+          <p class="note">
+            Early hands-on experience across analytics and telecom environments, building foundational exposure to professional workflows.
           </p>
-          <!-- <div class="actions">
-            <a class="btn small" href="#" aria-disabled="true">GitHub (add link)</a>
-            <a class="btn small" href="#" aria-disabled="true">Demo (optional)</a>
-          </div> -->
-        </article>
 
-        <article class="project" data-tags="angular .net ui">
-          <h3>MP3 Player UI</h3>
-          <p class="tags">Angular • .NET</p>
+          <div class="grid">
+            <div class="panel">
+              <h3>Agneyas Labs</h3>
+              <ul>
+                <li>Intern • Mar 2021 – Apr 2021</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Verzeo</h3>
+              <ul>
+                <li>Business Analytics Intern • Apr 2020 – May 2020</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>BSNL</h3>
+              <ul>
+                <li>Intern • Jun 2019 – Jul 2019</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Focus Areas</h3>
+              <ul>
+                <li>Business analytics exposure</li>
+                <li>Industry workflow familiarity</li>
+                <li>Foundational technical practice</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="extras">
+          <h2>Leadership & Recognition</h2>
+
+          <div class="grid">
+            <div class="panel">
+              <h3>Leadership & Activities</h3>
+              <ul>
+                <li>Student sports leadership involvement and event coordination.</li>
+                <li>Organized logistics for large college events (hospitality/food stalls).</li>
+                <li>Contributed to internal community-building initiatives at Clarivate.</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Recognition</h3>
+              <ul>
+                <li>Recognized at Clarivate for delivered work (Merit Certificate / Award, 2022).</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="resume">
+          <h2>Resume</h2>
           <p>
-            A focused UI project centered on clean list-based interaction patterns for browsing and managing song selections.
+            <a class="btn primary" href="./resume.pdf" download>Download Resume (PDF)</a>
           </p>
-        </article>
+        </section>
 
-        <article class="project" data-tags="azure docker blob storage cloud">
-          <h3>Cloud Storage Prototype</h3>
-          <p class="tags">Azure • Docker</p>
-          <p>
-            Containerized storage workflow prototype exploring deployment portability and practical cloud storage usage.
-          </p>
-        </article>
-
-        <article class="project" data-tags="pyspark databricks aws s3 analytics">
-          <h3>IPL Data Analysis</h3>
-          <p class="tags">PySpark • Databricks • AWS S3</p>
-          <p>
-            Data processing and analysis project focused on extracting patterns and producing outcome-oriented insights from match data.
-          </p>
-        </article>
-
-        <article class="project" data-tags="python scapy linux network security">
-          <h3>Network Traffic Analyzer</h3>
-          <p class="tags">Python • Scapy • Linux</p>
-          <p>
-            Network inspection tool exploring packet-level behavior and protocol analysis to surface suspicious patterns.
-          </p>
-        </article>
-
-        <article class="project" data-tags="java oop game">
-          <h3>Snake and Ladder Game</h3>
-          <p class="tags">Java • OOP</p>
-          <p>
-            A classic game implementation designed to demonstrate core OOP structure, state handling, and deterministic game rules.
-          </p>
-        </article>
-
-        <article class="project" data-tags="signal health detection">
-          <h3>Heart Sound Detection</h3>
-          <p class="tags">Health • Signal Features</p>
-          <p>
-            Applied project exploring how sound characteristics (tone/intensity) can be used as features for health-oriented detection.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="card" id="education">
-      <h2>Education</h2>
-      <div class="edu">
-        <div class="edu-item">
-          <h3>Saint Louis University</h3>
-          <p class="meta">MS, Computer Science • Aug 2024 – May 2026 • GPA: 3.84/4.0</p>
-        </div>
-        <div class="edu-item">
-          <h3>Manipal Institute of Technology</h3>
-          <p class="meta">B.Tech, Electronics & Communication Engineering • Jul 2017 – Jun 2021 • GPA: 8.44/10</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- INTERNSHIPS (ADDED) -->
-    <section class="card" id="internships">
-      <h2>Internships</h2>
-      <p class="note">
-        Early hands-on experience across analytics and telecom environments, building foundational exposure to professional workflows.
-      </p>
-
-      <div class="grid">
-        <div class="panel">
-          <h3>Agneyas Labs</h3>
-          <ul>
-            <li>Intern • Mar 2021 – Apr 2021</li>
-          </ul>
-        </div>
-
-        <div class="panel">
-          <h3>Verzeo</h3>
-          <ul>
-            <li>Business Analytics Intern • Apr 2020 – May 2020</li>
-          </ul>
-        </div>
-
-        <div class="panel">
-          <h3>BSNL</h3>
-          <ul>
-            <li>Intern • Jun 2019 – Jul 2019</li>
-          </ul>
-        </div>
-
-        <div class="panel">
-          <h3>Focus Areas</h3>
-          <ul>
-            <li>Business analytics exposure</li>
-            <li>Industry workflow familiarity</li>
-            <li>Foundational technical practice</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- LEADERSHIP / EXTRAS -->
-    <section class="card" id="extras">
-      <h2>Leadership & Recognition</h2>
-
-      <div class="grid">
-        <div class="panel">
-          <h3>Leadership & Activities</h3>
-          <ul>
-            <li>Student sports leadership involvement and event coordination.</li>
-            <li>Organized logistics for large college events (hospitality/food stalls).</li>
-            <li>Contributed to internal community-building initiatives at Clarivate.</li>
-          </ul>
-        </div>
-
-        <div class="panel">
-          <h3>Recognition</h3>
-          <ul>
-            <li>Recognized at Clarivate for delivered work (Merit Certificate / Award, 2022).</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- RESUME -->
-    <section class="card" id="resume">
-      <h2>Resume</h2>
-      <p>
-        <a class="btn primary" href="./resume.pdf" download>Download Resume (PDF)</a>
-      </p>
-      <!-- <p class="note">
-        Place a file named <code>resume.pdf</code> in the same folder as <code>index.html</code>.
-      </p> -->
-    </section>
-
-    <!-- CONTACT -->
-    <section class="card" id="contact">
-      <h2>Contact</h2>
-      <p>If you’d like to connect about full stack roles, feel free to reach out.</p>
-      <div class="cta">
-        <a class="btn primary" href="mailto:premkiranpittu@gmail.com">Email</a>
-        <a class="btn" href="https://www.linkedin.com/in/polepalli-prem-kiran" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="btn" href="https://github.com/premkiran2" target="_blank" rel="noreferrer">GitHub</a>
-      </div>
-    </section>
+        <section class="card" id="contact">
+          <h2>Contact</h2>
+          <p>If you’d like to connect about full stack roles, feel free to reach out.</p>
+          <div class="cta">
+            <a class="btn primary" href="mailto:premkiranpittu@gmail.com">Email</a>
+            <a class="btn" href="https://www.linkedin.com/in/polepalli-prem-kiran" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="https://github.com/premkiran2" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </section>
+      </aside>
+    </div>
 
     <footer class="footer">
       <p>© <span id="year"></span> Prem Kiran Polepalli</p>
