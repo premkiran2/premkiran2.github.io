@@ -10,7 +10,7 @@
   --accent-3: #f59e0b;
   --shadow: 0 18px 40px rgba(15,23,42,0.12);
   --radius: 18px;
-  --max: 1060px;
+  --max: 1220px;
   --font: "Space Grotesk", "Segoe UI", Arial, sans-serif;
   --title-font: "Playfair Display", "Times New Roman", serif;
   --transition: all 0.35s ease;
@@ -47,7 +47,18 @@ h2::after {
 @media (max-width: 1100px) {
   .layout { grid-template-columns: 1fr; }
 }
+.sidebar { position: relative; }
+.sidebar-inner {
+  position: sticky;
+  top: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 .sidebar .grid { grid-template-columns: 1fr; }
+@media (max-width: 1100px) {
+  .sidebar-inner { position: static; }
+}
 
 .bg {
   position: fixed;
